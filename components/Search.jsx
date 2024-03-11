@@ -1,7 +1,6 @@
 import { View, Text, TouchableOpacity, TextInput } from 'react-native'
 import React from 'react'
 import { Feather, Ionicons } from '@expo/vector-icons'
-
 const Search = () => {
   return (
     <View className="  flex-row  justify-between content-center  border border-gray-300  rounded-2xl px-3 my-6 h-14 w-full">

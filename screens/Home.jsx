@@ -2,6 +2,7 @@ import { View, Text, SafeAreaView, TouchableOpacity } from "react-native";
 import React from "react";
 import { Feather, Ionicons } from "@expo/vector-icons";
 import Search from "../components/Search";
+import Slider from "../components/Slider";
 
 const Home = () => {
   return (
@@ -37,6 +38,7 @@ const Home = () => {
 
         </View>
 <Search />
+<Slider />
       </View>
     </SafeAreaView>
   );

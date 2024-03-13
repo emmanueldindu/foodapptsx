@@ -11,7 +11,6 @@ const Search = () => {
                 <View className="rounded-sm ">
                     <TextInput
                         className="w-full h-full px-2"
-                        value=''
                       
                         placeholder='Resturants, groceries, dishes'
 

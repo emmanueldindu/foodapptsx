@@ -3,7 +3,8 @@ import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import ButtonTab from './navigation/ButtonTab';
-import Filter from './(modal)/Filter';
+import FilterModal from './modal/FilterModal';
+
 const Stack = createNativeStackNavigator()
 
 export default function App() {
@@ -19,8 +20,11 @@ export default function App() {
 
       </Stack.Screen>
       <Stack.Screen
-      name='filter'
-      component={Filter}
+      name='FilterModal'
+      options={{
+        presentation:'modal'
+      }}
+      component={FilterModal}
       />
 
   

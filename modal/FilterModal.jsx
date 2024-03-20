@@ -1,7 +1,7 @@
 import { View, Text } from 'react-native'
 import React from 'react'
-
-const FilterModal = () => {
+import { useNavigation } from '@react-navigation/native';
+const FilterModal = ({ navigation }) => {
   return (
     <View>
       <Text>FilterModal</Text>

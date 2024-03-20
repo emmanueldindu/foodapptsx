@@ -1,13 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import ButtonTab from './navigation/ButtonTab';
 import FilterModal from './modal/FilterModal';
-
+import { useNavigation } from '@react-navigation/native';
+import { Ionicons } from '@expo/vector-icons';
 const Stack = createNativeStackNavigator()
-
 export default function App() {
+  // const navigation = useNavigation()
   return (
 
    <NavigationContainer>
@@ -21,9 +22,16 @@ export default function App() {
       </Stack.Screen>
       <Stack.Screen
       name='FilterModal'
-      options={{
-        presentation:'modal'
-      }}
+      options={({ navigation }) => ({
+        presentation: 'modal',
+        headerTitle: 'Filter',
+        headerShadowVisible: false,
+        headerLeft: () => (
+          <TouchableOpacity onPress={() => navigation.goBack()}>
+            <Ionicons name='close-outline' color='#4FAF5A' size={26} />
+          </TouchableOpacity>
+        ),
+      })}
       component={FilterModal}
       />
 

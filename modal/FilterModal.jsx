@@ -8,19 +8,26 @@ import {
 import React from "react";
 import { useNavigation } from "@react-navigation/native";
 import categories from "../assets/data/filter.json";
+import { Ionicons } from "@expo/vector-icons";
 const FilterModal = ({ navigation }) => {
+  const ItemBox = () => (
+    <View style={styles.itemContainer}>
+ <TouchableOpacity style={styles.item}>
+<Ionicons name="arrow-down" size={23} color={'gray'} />
+<Text style={{flex: 1}}>Sort</Text>
+ </TouchableOpacity>
+    </View>
+  );
 
-
-    const renderItem = ({item}) => (
-       <View>
-        <Text>{item.name}</Text>
-
-        </View>
-    )
+  const renderItem = ({ item }) => (
+    <View>
+      <Text>{item.name}</Text>
+    </View>
+  );
 
   return (
     <View style={styles.container}>
-      <FlatList data={categories} renderItem={renderItem} />
+      <FlatList data={categories} renderItem={renderItem} ListHeaderComponent={<ItemBox />} />
       <View style={styles.footer}>
         <TouchableOpacity
           onPress={() => navigation.goBack()}
@@ -69,6 +76,16 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: "bold",
   },
+  itemContainer: {},
+  item: {
+    flexDirection: 'row',
+    gap: 9,
+    alignItems: 'center',
+    backgroundColor: 'fff',
+    paddingVertical:8,
+    borderColor: '#ccc',
+    borderBottomWidth: 1
+  }
 });
 
 export default FilterModal;

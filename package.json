@@ -28,7 +28,8 @@
     "react-native-swiper": "^1.6.0",
     "react-native-swiper-flatlist": "^3.2.3",
     "reanimated-bottom-sheet": "^1.0.0-alpha.22",
-    "tailwind-rn": "^4.2.0"
+    "tailwind-rn": "^4.2.0",
+    "react-native-bouncy-checkbox": "4.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

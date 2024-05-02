@@ -12,8 +12,10 @@ import React, { useRef, forwardRef, useMemo, useState } from "react";
 import { Feather, Ionicons } from "@expo/vector-icons";
 import Search from "../components/Search";
 import Slider from "../components/Slider";
+import { useNavigation } from '@react-navigation/native';
 
 const Home = () => {
+  const navigation = useNavigation()
   const screenHeight = Dimensions.get("window").height;
   const [isVisible, setIsVisible] = useState(false);
   const translateY = useRef(new Animated.Value(screenHeight)).current;
@@ -94,10 +96,13 @@ const Home = () => {
             <Feather name="map-pin" size={16} color={"#4FAF5A"} />
             <Text>Location</Text>
           </View>
+          <TouchableOpacity           onPress={() => navigation.navigate('LocationModal')} 
+>
           <View className="flex-row gap-x-3">
 
             <Text className="text-gray-400 text-sm">Baywood</Text>
           </View>
+          </TouchableOpacity>
         </View>
 
         <View className="flex-row justify-between p-3">

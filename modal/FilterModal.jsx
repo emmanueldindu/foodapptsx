@@ -5,13 +5,15 @@ import {
   TouchableOpacity,
   FlatList,
 } from "react-native";
-import React from "react";
+import React, { useState } from "react";
 import { useNavigation } from "@react-navigation/native";
 import categories from "../assets/data/filter.json";
 import { Ionicons } from "@expo/vector-icons";
 import BouncyCheckbox from "react-native-bouncy-checkbox";
 
 const FilterModal = ({ navigation }) => {
+const [items, setItems] = useState(categories)
+
   const ItemBox = () => (
     <>
       <View style={styles.itemContainer}>
@@ -60,6 +62,7 @@ const FilterModal = ({ navigation }) => {
         size={18}
         fillColor="#4FAF5A"
         unFillColor="#FFFFFF"
+        
         iconStyle={{ borderColor: "white", borderRadius: 6 }}
         innerIconStyle={{ borderWidth: 2, borderRadius: 6 }}
         onPress={(isChecked) => {

@@ -53,8 +53,8 @@ const Slider = () => {
             <Text className="text-xl  p-3 text-white">
              Special Offer: Buy one get one Free!
             </Text>
-         <View className='bg-black h-[30px] mx-3 text-center items-center p-1 mt-3  rounded-xl w-[87px]'>
-          <Text className='text-white font-semibold'>Order Now</Text>
+         <View className='bg-black h-[30px] mx-3 text-center items-center p-1  mt-3 my-auto  rounded-xl w-[87px]'>
+          <Text className='text-white   font-semibold'>Order Now</Text>
          </View>
           </View>
 

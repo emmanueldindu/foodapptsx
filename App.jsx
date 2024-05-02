@@ -6,6 +6,7 @@ import ButtonTab from './navigation/ButtonTab';
 import FilterModal from './modal/FilterModal';
 import { useNavigation } from '@react-navigation/native';
 import { Ionicons } from '@expo/vector-icons';
+import LocationModal from './modal/LocationModal';
 const Stack = createNativeStackNavigator()
 export default function App() {
   // const navigation = useNavigation()
@@ -35,6 +36,21 @@ export default function App() {
       component={FilterModal}
       />
 
+
+<Stack.Screen
+      name='LocationModal'
+      options={({ navigation }) => ({
+        presentation: 'modal',
+        headerTitle: 'Location',
+        headerShadowVisible: false,
+        headerLeft: () => (
+          <TouchableOpacity onPress={() => navigation.goBack()}>
+            <Ionicons name='close-outline' color='#4FAF5A' size={26} />
+          </TouchableOpacity>
+        ),
+      })}
+      component={LocationModal}
+      />
   
 
     </Stack.Navigator>

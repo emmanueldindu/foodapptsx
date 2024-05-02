@@ -53,15 +53,19 @@ const FilterModal = ({ navigation }) => {
 
   const renderItem = ({ item }) => (
     <View style={styles.row}>
-      <Text style={styles.itemText}>{item.name} ({item.count})</Text>
+      <Text style={styles.itemText}>
+        {item.name} ({item.count})
+      </Text>
       <BouncyCheckbox
-  size={25}
-  fillColor="green"
-  unFillColor="#FFFFFF"
-  iconStyle={{ borderColor: "white" }}
-  innerIconStyle={{ borderWidth: 2 }}
-  onPress={(isChecked) => {console.log(isChecked)}}
-/>
+        size={18}
+        fillColor="#4FAF5A"
+        unFillColor="#FFFFFF"
+        iconStyle={{ borderColor: "white", borderRadius: 6 }}
+        innerIconStyle={{ borderWidth: 2, borderRadius: 6 }}
+        onPress={(isChecked) => {
+          console.log(isChecked);
+        }}
+      />
     </View>
   );
 
@@ -72,7 +76,7 @@ const FilterModal = ({ navigation }) => {
         renderItem={renderItem}
         ListHeaderComponent={<ItemBox />}
       />
-      <View style={{height: 120}}>
+      <View style={{ height: 120 }}>
         <View style={styles.footer}>
           <TouchableOpacity
             onPress={() => navigation.goBack()}
@@ -102,7 +106,7 @@ const styles = StyleSheet.create({
     right: 0,
     height: 100,
     padding: 12,
-    width: '100%',
+    width: "100%",
 
     backgroundColor: "#fff",
     elevation: 10,
@@ -157,7 +161,7 @@ const styles = StyleSheet.create({
   },
   itemText: {
     flex: 1,
-  }
+  },
 });
 
 export default FilterModal;

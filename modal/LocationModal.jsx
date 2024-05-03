@@ -4,7 +4,7 @@ import React from 'react'
 const LocationModal = () => {
   return (
     <View>
-      <Text>LocationModal</Text>
+      <Text>Location Modal {process.env.GOGGLE_API_KEY}</Text>
     </View>
   )
 }

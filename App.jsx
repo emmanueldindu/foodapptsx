@@ -41,7 +41,7 @@ export default function App() {
       name='LocationModal'
       options={({ navigation }) => ({
         presentation: 'modal',
-        headerTitle: 'Location',
+        headerTitle: 'Select Location',
         headerShadowVisible: false,
         headerLeft: () => (
           <TouchableOpacity onPress={() => navigation.goBack()}>

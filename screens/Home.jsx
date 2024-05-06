@@ -13,6 +13,7 @@ import { Feather, Ionicons } from "@expo/vector-icons";
 import Search from "../components/Search";
 import Slider from "../components/Slider";
 import { useNavigation } from '@react-navigation/native';
+import Categories from "../components/Categories";
 
 const Home = () => {
   const navigation = useNavigation()
@@ -60,6 +61,7 @@ const Home = () => {
         </View>
         <Search />
         <Slider />
+        <Categories />
       </View>
       <Animated.View
         style={[

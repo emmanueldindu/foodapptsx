@@ -1,34 +1,61 @@
 import c1 from '../../data/data/c1.png'
 import c2 from '../../data/data/c2.png'
+import spag from '../../data/data/spaghetti.png'
+import salad from '../../data/data/salad.png'
+import rice from '../../data/data/rice.png'
+import pizza from '../../data/data/pizza.png'
+import coffee from '../../data/data/coffee.png'
+import cocktail from '../../data/data/cocktail.png'
+import burger from '../../data/data/burger.png'
+import chicken from '../../data/data/chicken.png'
 export const categories = [
   {
-    text: 'Restaurants',
-    img: c1,
+    text: 'Chicken',
+    img: chicken,
 
   },
 
 
 
   {
-    text: 'Grocery',
-    img: c2,
+    text: 'Burger',
+    img: burger,
   },
 
 
   {
-    text: 'Restaurants',
-    img: c1,
+    text: 'Rice',
+    img: rice,
 
   },
 
 
 
   {
-    text: 'Grocery',
-    img: c2,
+    text: 'Pizza',
+    img: pizza,
   },
 
 
+  {
+    text: 'Pasta',
+    img: spag,
+  },
+
+  {
+    text: 'Salad',
+    img: salad,
+  },
+
+  {
+    text: 'Coffee',
+    img: coffee,
+  },
+
+  {
+    text: 'Cocktail',
+    img: cocktail,
+  },
   // {
   //   text: 'Offers',
   //   img: require('@/assets/data/c3.png'),

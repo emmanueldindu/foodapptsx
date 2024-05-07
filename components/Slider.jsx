@@ -33,14 +33,14 @@ const Slider = () => {
       paginationStyle={{marginBottom : 17}}
       paginationStyleItem={{height: 3, width: 15 }}
        showPagination autoplayLoop index={0}>
-        <View style={[styles.child]} className="flex-row justify-between  rounded-lg h-[182px] bg-green-400 ">
+        <View style={[styles.child]} className="flex-row justify-between  rounded-lg h-[145px] bg-green-400 ">
           <View className="grid w-[50%]">
             <Text className="text-xl  p-3 text-white">
               Claim Your Discount 30% daily Now!
             </Text>
-         <View className='bg-black h-[30px] mx-3 text-center items-center p-1  rounded-xl w-[87px]'>
+         {/* <View className='bg-black h-[30px] mx-3 text-center items-center p-1  rounded-xl w-[87px]'>
           <Text className='text-white font-semibold'>Order Now</Text>
-         </View>
+         </View> */}
           </View>
 
           <View className="w-[50%]">
@@ -48,14 +48,14 @@ const Slider = () => {
           </View>
         </View>
 
-        <View style={[styles.child]} className="flex-row justify-between  rounded-lg h-[182px] bg-[#DDBB66] ">
+        <View style={[styles.child]} className="flex-row justify-between  rounded-lg h-[145px] bg-[#DDBB66] ">
           <View className="grid w-[50%] ">
             <Text className="text-xl  p-3 text-white">
              Special Offer: Buy one get one Free!
             </Text>
-         <View className='bg-black h-[30px] mx-3 text-center items-center p-1  mt-3 my-auto  rounded-xl w-[87px]'>
+         {/* <View className='bg-black h-[30px] mx-3 text-center items-center p-1  mt-3 my-auto  rounded-xl w-[87px]'>
           <Text className='text-white   font-semibold'>Order Now</Text>
-         </View>
+         </View> */}
           </View>
 
           <View className="w-[50%]">
@@ -63,14 +63,14 @@ const Slider = () => {
           </View>
         </View>
 
-        <View style={[styles.child]} className="flex-row justify-between  rounded-lg h-[182px] bg-orange-400 ">
+        <View style={[styles.child]} className="flex-row justify-between  rounded-lg h-[145px] bg-orange-400 ">
           <View className="grid p-2 w-[50%]">
             <Text className="text-xl  p-3 text-white">
               Claim Your Discount 30% daily Now!
             </Text>
-         <View className='bg-black h-[30px] mx-3 text-center items-center p-1  rounded-xl w-[87px]'>
+         {/* <View className='bg-black h-[30px] mx-3 text-center items-center p-1  rounded-xl w-[87px]'>
           <Text className='text-white font-semibold'>Order Now</Text>
-         </View>
+         </View> */}
           </View>
 
           <View className="w-[50%]">

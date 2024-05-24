@@ -41,6 +41,7 @@ const Home = () => {
                 <Feather name="map-pin" size={24} color={"#4FAF5A"} />
               </View>
             </TouchableOpacity>
+            
 
             <TouchableOpacity>
               <View className="grid i mt-2">
@@ -98,7 +99,8 @@ const Home = () => {
             <Feather name="map-pin" size={16} color={"#4FAF5A"} />
             <Text>Location</Text>
           </View>
-          <TouchableOpacity           onPress={() => navigation.navigate('LocationModal')} 
+          <TouchableOpacity 
+                    onPress={() => navigation.navigate('LocationModal')} 
 >
           <View className="flex-row gap-x-3">
 

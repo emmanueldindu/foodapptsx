@@ -14,6 +14,7 @@ import Search from "../components/Search";
 import Slider from "../components/Slider";
 import { useNavigation } from '@react-navigation/native';
 import Categories from "../components/Categories";
+import Resturants from "../components/Resturants";
 
 const Home = () => {
   const navigation = useNavigation()
@@ -63,6 +64,7 @@ const Home = () => {
         <Search />
         <Slider />
         <Categories />
+        <Resturants />
       </View>
       <Animated.View
         style={[

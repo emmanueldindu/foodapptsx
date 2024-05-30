@@ -8,6 +8,7 @@ import coffee from '../../data/data/coffee.png'
 import cocktail from '../../data/data/cocktail.png'
 import burger from '../../data/data/burger.png'
 import chicken from '../../data/data/chicken.png'
+import res from '../../data/data/res.jpg'
 export const categories = [
   {
     text: 'Chicken',
@@ -80,7 +81,7 @@ export const restaurants = [
     rating: '4.5 Excellent',
     ratings: '(500+)',
     distance: '0.7 miles away',
-    img: spag,
+    img: res,
       tags: ['Italian', 'Pizza', 'Pasta', 'Salads'],
     duration: '35 - 45',
   },

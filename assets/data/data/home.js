@@ -9,6 +9,8 @@ import cocktail from '../../data/data/cocktail.png'
 import burger from '../../data/data/burger.png'
 import chicken from '../../data/data/chicken.png'
 import res from '../../data/data/res.jpg'
+import harry from '../../data/data/harry.jpg'
+import pasta from '../../data/data/pasta.jpg'
 export const categories = [
   {
     text: 'Chicken',
@@ -91,7 +93,7 @@ export const restaurants = [
     rating: '4.9 Excellent',
     ratings: '(500+)',
     distance: '1.7 miles away',
-    img: rice,
+    img: harry,
         tags: ['Salads', 'Vegan', 'Healthy', 'British'],
     duration: '15 - 30',
   },
@@ -101,7 +103,7 @@ export const restaurants = [
     rating: '4.5 Excellent',
     ratings: '(500+)',
     distance: '3 miles away',
-    img: pizza,
+    img: pasta,
         tags: ['Spanish', 'Salads', 'Tpas', 'Pasta'],
     duration: '25 - 45',
   },

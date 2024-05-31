@@ -7,6 +7,7 @@ import { restaurants } from "../assets/data/data/home";
 const Resturants = () => {
   return (
     <View className="flex h-[250px]  p-4  mt-6">
+      <Text className='font-semibold text-sm '>Featured Resturants</Text>
       <ScrollView horizontal showsHorizontalScrollIndicator={false}>
         <View className="flex-row gap-5 justify-between">
           {restaurants.map((resturant, index) => (
